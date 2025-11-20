@@ -1,0 +1,84 @@
+:root {
+    --font-primary: 'Arial', sans-serif;
+    --color-primary: #003366; /* ETSU navy */
+    --color-secondary: #FFD700; /* ETSU gold */
+    --color-gray: #666;
+    --color-light-gray: #f8f8f8;
+    --color-success: #99cc33;
+    --border-radius: 6px;
+    --transition-speed: 0.3s;
+}
+
+/* Typography */
+.UName, .FormName, .SectionHead {
+    font-family: var(--font-primary);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.FormNameGreen {
+    color: var(--color-success);
+}
+
+/* Labels & Text */
+.FieldLabel {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.PlainText, .IText {
+    font-size: 0.9rem;
+}
+.IText {
+    font-style: italic;
+}
+
+/* Headers */
+.HeaderSilverBackBlackText,
+.HeaderGrayBackBlackText,
+.HeaderBlackBackWhiteText {
+    font-weight: bold;
+    padding: 8px;
+    border-radius: var(--border-radius);
+}
+.HeaderSilverBackBlackText { background-color: silver; color: #000; }
+.HeaderGrayBackBlackText { background-color: gray; color: #000; }
+.HeaderBlackBackWhiteText { background-color: #000; color: #fff; }
+
+/* Buttons */
+button, .PaymentTotalButton, .UploadFileButton, .DeleteFileButton {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: var(--border-radius);
+    border: none;
+    background-color: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+button:hover {
+    background-color: var(--color-secondary);
+    color: #000;
+}
+
+/* Dropzone */
+.dropzone {
+    border: 2px dashed var(--color-gray);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    transition: background-color var(--transition-speed);
+}
+.dropzone.drop-active {
+    background-color: var(--color-light-gray);
+}
+
+/* Responsive Modal */
+@media (min-width: 768px) {
+    .modal-dialog-big {
+        max-width: 768px;
+    }
+}
+@media (min-width: 979px) {
+    .modal-dialog-big {
+        max-width: 979px;
+    }
+}
