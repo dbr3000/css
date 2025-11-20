@@ -9,11 +9,19 @@
     --transition-speed: 0.3s;
 }
 
+/* Global */
+body, .DynamicFormContainer {
+    font-family: var(--font-primary) !important;
+    color: var(--color-primary);
+    background-color: #fff;
+}
+
 /* Typography */
 .UName, .FormName, .SectionHead {
     font-family: var(--font-primary);
     font-weight: bold;
     font-size: 1rem;
+    color: var(--color-primary);
 }
 
 .FormNameGreen {
@@ -24,9 +32,11 @@
 .FieldLabel {
     font-size: 0.9rem;
     font-weight: bold;
+    color: var(--color-primary);
 }
 .PlainText, .IText {
     font-size: 0.9rem;
+    color: var(--color-gray);
 }
 .IText {
     font-style: italic;
@@ -40,9 +50,9 @@
     padding: 8px;
     border-radius: var(--border-radius);
 }
-.HeaderSilverBackBlackText { background-color: silver; color: #000; }
-.HeaderGrayBackBlackText { background-color: gray; color: #000; }
-.HeaderBlackBackWhiteText { background-color: #000; color: #fff; }
+.HeaderSilverBackBlackText { background-color: var(--color-secondary) !important; color: var(--color-primary) !important; }
+.HeaderGrayBackBlackText { background-color: var(--color-primary) !important; color: var(--color-secondary) !important; }
+.HeaderBlackBackWhiteText { background-color: var(--color-primary) !important; color: var(--color-secondary) !important; }
 
 /* Buttons */
 button, .PaymentTotalButton, .UploadFileButton, .DeleteFileButton {
@@ -50,14 +60,14 @@ button, .PaymentTotalButton, .UploadFileButton, .DeleteFileButton {
     padding: 6px 12px;
     border-radius: var(--border-radius);
     border: none;
-    background-color: var(--color-primary);
-    color: #fff;
+    background-color: var(--color-primary) !important;
+    color: #fff !important;
     cursor: pointer;
     transition: background-color var(--transition-speed);
 }
 button:hover {
-    background-color: var(--color-secondary);
-    color: #000;
+    background-color: var(--color-secondary) !important;
+    color: var(--color-primary) !important;
 }
 
 /* Dropzone */
