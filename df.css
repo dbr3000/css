@@ -70,6 +70,45 @@ button:hover {
     color: var(--color-primary) !important;
 }
 
+/* Next Button */
+#NextButton {
+    background-color: var(--color-primary) !important;
+    color: #fff !important;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+#NextButton:hover {
+    background-color: var(--color-secondary) !important;
+    color: var(--color-primary) !important;
+}
+
+/* Attach File Button */
+.AttachFileButton {
+    background-color: var(--color-primary) !important;
+    color: #fff !important;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+.AttachFileButton:hover {
+    background-color: var(--color-secondary) !important;
+    color: var(--color-primary) !important;
+}
+
+/* Tables */
+table, .DynamicFormTable {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--color-primary);
+}
+
 /* Dropzone */
 .dropzone {
     border: 2px dashed var(--color-gray);
